@@ -15,12 +15,14 @@ public class fibonacci {
         fn1=1;
         fn=1;
 
-        for (int i = 1; i <=n; i++) {
-            System.out.println("nilai fibonacci ke "+ i +" = "+fn);
+        for (int i = 1; i <n; i++) {
             fn = fn1 + fn2;
             fn2 = fn1;
             fn1 = fn;
-        }
+        }System.out.println("nilai fibonacci ke "+ n +" = "+fn);
+
+        /*jika ingin langsung menampilkan nilai fibonacci ke n
+        maka letakkan print di luar for & nilai i harus < n */
 
         while (awal <=n) {
             System.out.println(" nilai fibonacci ke "+ awal++ +" = "+fn);
